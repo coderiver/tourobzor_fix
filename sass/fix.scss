@@ -1,6 +1,30 @@
 .fieldset__content{
 	overflow: hidden;
 }
+.input_small2{
+	width: 35px;
+}
+.input_small3{
+	width: 30px;
+	display: inline-block;
+}
+.row_middle{
+	width: 110px;
+	float: left;
+	margin-right: 10px;
+	clear: none;
+}
+.row_fix{
+	width: 57px;
+	float: right;
+	margin-right: 20px;
+}
+.select_fr{
+	float: right;
+}
+.input_date.input_short {
+	width: 73px;
+}
 .row_rad {
 	position: relative;
 	vertical-align: top;
@@ -30,9 +54,13 @@ div.label{
 	background: url("../img/back_arrow.png") 36px 11px no-repeat #fff;
 }
 .row__cross{
-	background: url("../img/cross.png") 0 0 no-repeat;
+	background: url("../img/cross.png") 0px 0px no-repeat;
 	display: block;
 	width: 11px;
 	height: 11px;
 	cursor: pointer;
+	position: relative;
+	top: -18px;
+	right: -93px;
+	z-index: 100;
 }

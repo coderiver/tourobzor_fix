@@ -4,11 +4,47 @@
 }
 
 /* line 4, ../sass/fix.scss */
+.input_small2 {
+  width: 35px;
+}
+
+/* line 7, ../sass/fix.scss */
+.input_small3 {
+  width: 30px;
+  display: inline-block;
+}
+
+/* line 11, ../sass/fix.scss */
+.row_middle {
+  width: 110px;
+  float: left;
+  margin-right: 10px;
+  clear: none;
+}
+
+/* line 17, ../sass/fix.scss */
+.row_fix {
+  width: 57px;
+  float: right;
+  margin-right: 20px;
+}
+
+/* line 22, ../sass/fix.scss */
+.select_fr {
+  float: right;
+}
+
+/* line 25, ../sass/fix.scss */
+.input_date.input_short {
+  width: 73px;
+}
+
+/* line 28, ../sass/fix.scss */
 .row_rad {
   position: relative;
   vertical-align: top;
 }
-/* line 7, ../sass/fix.scss */
+/* line 31, ../sass/fix.scss */
 .row_rad select {
   width: 52px !important;
   height: 21px;
@@ -23,7 +59,7 @@
   left: 0;
 }
 
-/* line 21, ../sass/fix.scss */
+/* line 45, ../sass/fix.scss */
 div.label {
   width: 40px;
   height: 20px;
@@ -36,11 +72,15 @@ div.label {
   background: url("../img/back_arrow.png") 36px 11px no-repeat white;
 }
 
-/* line 32, ../sass/fix.scss */
+/* line 56, ../sass/fix.scss */
 .row__cross {
-  background: url("../img/cross.png") 0 0 no-repeat;
+  background: url("../img/cross.png") 0px 0px no-repeat;
   display: block;
   width: 11px;
   height: 11px;
   cursor: pointer;
+  position: relative;
+  top: -18px;
+  right: -93px;
+  z-index: 100;
 }
