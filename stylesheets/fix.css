@@ -8,38 +8,38 @@ input:-moz-placeholder {
   font-style: normal;
 }
 
-/* line 4, ../sass/fix.scss */
-.select .attr_w1 {
-  width: 180px;
-}
-
-/* line 7, ../sass/fix.scss */
-.attr_w2 {
-  width: 57px;
-}
-
-/* line 10, ../sass/fix.scss */
+/* line 5, ../sass/fix.scss */
 .fieldset__content {
   overflow: hidden;
 }
 
-/* line 13, ../sass/fix.scss */
+/* line 9, ../sass/fix.scss */
+.select .attr_w1 {
+  width: 180px;
+}
+
+/* line 12, ../sass/fix.scss */
+.attr_w2 {
+  width: 57px;
+}
+
+/* line 15, ../sass/fix.scss */
 .input_small2 {
   width: 35px;
 }
 
-/* line 16, ../sass/fix.scss */
+/* line 18, ../sass/fix.scss */
 .input_small3 {
   width: 30px;
   display: inline-block;
 }
 
-/* line 20, ../sass/fix.scss */
+/* line 22, ../sass/fix.scss */
 .input_average {
   width: 57px;
 }
 
-/* line 23, ../sass/fix.scss */
+/* line 25, ../sass/fix.scss */
 .row_middle {
   width: 110px;
   float: left;
@@ -47,16 +47,11 @@ input:-moz-placeholder {
   clear: none;
 }
 
-/* line 29, ../sass/fix.scss */
+/* line 31, ../sass/fix.scss */
 .row_fix {
   width: 57px;
   float: right;
   margin-right: 20px;
-}
-
-/* line 34, ../sass/fix.scss */
-.select_fr {
-  float: right;
 }
 
 /* line 37, ../sass/fix.scss */
@@ -64,12 +59,27 @@ input:-moz-placeholder {
   width: 73px;
 }
 
-/* line 40, ../sass/fix.scss */
+/* line 41, ../sass/fix.scss */
+.select_fr {
+  float: right;
+}
+
+/* line 45, ../sass/fix.scss */
+.fieldset input {
+  margin-right: 4px;
+}
+
+/* line 48, ../sass/fix.scss */
+.row__inline .row {
+  margin-right: 0 !important;
+}
+
+/* line 52, ../sass/fix.scss */
 .row_rad {
   position: relative;
   vertical-align: top;
 }
-/* line 43, ../sass/fix.scss */
+/* line 55, ../sass/fix.scss */
 .row_rad select {
   width: 52px !important;
   height: 21px;
@@ -84,9 +94,9 @@ input:-moz-placeholder {
   left: 0;
 }
 
-/* line 58, ../sass/fix.scss */
+/* line 70, ../sass/fix.scss */
 .row_rad2 select {
-  width: 85px;
+  width: 79px;
   height: 25px;
   background: transparent;
   padding: 1px 5px;
@@ -99,25 +109,7 @@ input:-moz-placeholder {
   left: 0;
 }
 
-/* line 72, ../sass/fix.scss */
-.row_rad2 select {
-  width: 79px;
-}
-
-/* line 75, ../sass/fix.scss */
-div.label {
-  width: 40px;
-  height: 20px;
-  padding: 1px 5px;
-  line-height: 20px;
-  border-radius: 3px;
-  vertical-align: middle;
-  border: 1px solid #cacaca;
-  overflow: hidden;
-  background: url("../img/back_arrow.png") 36px 11px no-repeat white;
-}
-
-/* line 86, ../sass/fix.scss */
+/* line 85, ../sass/fix.scss */
 .row__cross {
   background: url("../img/cross.png") 0px 0px no-repeat;
   display: block;

@@ -1,14 +1,16 @@
 input::-webkit-input-placeholder {font-style: normal;}
 input:-moz-placeholder {font-style: normal;}
 
+// fix
+.fieldset__content{
+	overflow: hidden;
+}
+// fix width
 .select .attr_w1{
 	width: 180px;
 }
 .attr_w2 {
 	width: 57px;
-}
-.fieldset__content{
-	overflow: hidden;
 }
 .input_small2{
 	width: 35px;
@@ -31,12 +33,22 @@ input:-moz-placeholder {font-style: normal;}
 	float: right;
 	margin-right: 20px;
 }
-.select_fr{
-	float: right;
-}
+
 .input_date.input_short {
 	width: 73px;
 }
+// float for select (form 2)
+.select_fr{
+	float: right;
+}
+// fix margin !
+.fieldset input{
+	margin-right: 4px;
+}
+.row__inline .row{
+	margin-right: 0 !important;
+}
+// for select
 .row_rad {
 	position: relative;
 	vertical-align: top;
@@ -56,7 +68,7 @@ input:-moz-placeholder {font-style: normal;}
 }
 .row_rad2{
 	select{
-		width: 85px;
+		width: 79px;
 		height: 25px;
 		background: transparent;
 		padding: 1px 5px;
@@ -69,20 +81,7 @@ input:-moz-placeholder {font-style: normal;}
 		left: 0;
 	}
 }
-.row_rad2 select{
-	width: 79px;
-}
-div.label{
-	width: 40px;
-	height: 20px;
-	padding: 1px 5px;
-	line-height: 20px;
-	border-radius:  3px;
-	vertical-align: middle;
-	border: 1px solid #cacaca;
-	overflow: hidden;
-	background: url("../img/back_arrow.png") 36px 11px no-repeat #fff;
-}
+// cross
 .row__cross{
 	background: url("../img/cross.png") 0px 0px no-repeat;
 	display: block;
