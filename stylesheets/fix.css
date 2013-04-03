@@ -9,12 +9,12 @@ input:-moz-placeholder {
 }
 
 /* line 4, ../sass/fix.scss */
-.select select {
+.select .attr_w1 {
   width: 180px;
 }
 
 /* line 7, ../sass/fix.scss */
-.select.select_fr select {
+.attr_w2 {
   width: 57px;
 }
 
@@ -35,6 +35,11 @@ input:-moz-placeholder {
 }
 
 /* line 20, ../sass/fix.scss */
+.input_average {
+  width: 57px;
+}
+
+/* line 23, ../sass/fix.scss */
 .row_middle {
   width: 110px;
   float: left;
@@ -42,29 +47,29 @@ input:-moz-placeholder {
   clear: none;
 }
 
-/* line 26, ../sass/fix.scss */
+/* line 29, ../sass/fix.scss */
 .row_fix {
   width: 57px;
   float: right;
   margin-right: 20px;
 }
 
-/* line 31, ../sass/fix.scss */
+/* line 34, ../sass/fix.scss */
 .select_fr {
   float: right;
 }
 
-/* line 34, ../sass/fix.scss */
+/* line 37, ../sass/fix.scss */
 .input_date.input_short {
   width: 73px;
 }
 
-/* line 37, ../sass/fix.scss */
+/* line 40, ../sass/fix.scss */
 .row_rad {
   position: relative;
   vertical-align: top;
 }
-/* line 40, ../sass/fix.scss */
+/* line 43, ../sass/fix.scss */
 .row_rad select {
   width: 52px !important;
   height: 21px;
@@ -79,7 +84,27 @@ input:-moz-placeholder {
   left: 0;
 }
 
-/* line 54, ../sass/fix.scss */
+/* line 58, ../sass/fix.scss */
+.row_rad2 select {
+  width: 85px;
+  height: 25px;
+  background: transparent;
+  padding: 1px 5px;
+  line-height: 21px;
+  border-radius: 10px;
+  vertical-align: middle;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+/* line 72, ../sass/fix.scss */
+.row_rad2 select {
+  width: 79px;
+}
+
+/* line 75, ../sass/fix.scss */
 div.label {
   width: 40px;
   height: 20px;
@@ -92,7 +117,7 @@ div.label {
   background: url("../img/back_arrow.png") 36px 11px no-repeat white;
 }
 
-/* line 65, ../sass/fix.scss */
+/* line 86, ../sass/fix.scss */
 .row__cross {
   background: url("../img/cross.png") 0px 0px no-repeat;
   display: block;
