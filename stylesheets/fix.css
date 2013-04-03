@@ -1,20 +1,40 @@
 /* line 1, ../sass/fix.scss */
+input::-webkit-input-placeholder {
+  font-style: normal;
+}
+
+/* line 2, ../sass/fix.scss */
+input:-moz-placeholder {
+  font-style: normal;
+}
+
+/* line 4, ../sass/fix.scss */
+.select select {
+  width: 180px;
+}
+
+/* line 7, ../sass/fix.scss */
+.select.select_fr select {
+  width: 57px;
+}
+
+/* line 10, ../sass/fix.scss */
 .fieldset__content {
   overflow: hidden;
 }
 
-/* line 4, ../sass/fix.scss */
+/* line 13, ../sass/fix.scss */
 .input_small2 {
   width: 35px;
 }
 
-/* line 7, ../sass/fix.scss */
+/* line 16, ../sass/fix.scss */
 .input_small3 {
   width: 30px;
   display: inline-block;
 }
 
-/* line 11, ../sass/fix.scss */
+/* line 20, ../sass/fix.scss */
 .row_middle {
   width: 110px;
   float: left;
@@ -22,29 +42,29 @@
   clear: none;
 }
 
-/* line 17, ../sass/fix.scss */
+/* line 26, ../sass/fix.scss */
 .row_fix {
   width: 57px;
   float: right;
   margin-right: 20px;
 }
 
-/* line 22, ../sass/fix.scss */
+/* line 31, ../sass/fix.scss */
 .select_fr {
   float: right;
 }
 
-/* line 25, ../sass/fix.scss */
+/* line 34, ../sass/fix.scss */
 .input_date.input_short {
   width: 73px;
 }
 
-/* line 28, ../sass/fix.scss */
+/* line 37, ../sass/fix.scss */
 .row_rad {
   position: relative;
   vertical-align: top;
 }
-/* line 31, ../sass/fix.scss */
+/* line 40, ../sass/fix.scss */
 .row_rad select {
   width: 52px !important;
   height: 21px;
@@ -59,7 +79,7 @@
   left: 0;
 }
 
-/* line 45, ../sass/fix.scss */
+/* line 54, ../sass/fix.scss */
 div.label {
   width: 40px;
   height: 20px;
@@ -72,7 +92,7 @@ div.label {
   background: url("../img/back_arrow.png") 36px 11px no-repeat white;
 }
 
-/* line 56, ../sass/fix.scss */
+/* line 65, ../sass/fix.scss */
 .row__cross {
   background: url("../img/cross.png") 0px 0px no-repeat;
   display: block;
