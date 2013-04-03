@@ -1,0 +1,46 @@
+/* line 1, ../sass/fix.scss */
+.fieldset__content {
+  overflow: hidden;
+}
+
+/* line 4, ../sass/fix.scss */
+.row_rad {
+  position: relative;
+  vertical-align: top;
+}
+/* line 7, ../sass/fix.scss */
+.row_rad select {
+  width: 52px !important;
+  height: 21px;
+  background: transparent;
+  padding: 1px 5px;
+  line-height: 21px;
+  border-radius: 10px;
+  vertical-align: middle;
+  opacity: 0;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+/* line 21, ../sass/fix.scss */
+div.label {
+  width: 40px;
+  height: 20px;
+  padding: 1px 5px;
+  line-height: 20px;
+  border-radius: 3px;
+  vertical-align: middle;
+  border: 1px solid #cacaca;
+  overflow: hidden;
+  background: url("../img/back_arrow.png") 36px 11px no-repeat white;
+}
+
+/* line 32, ../sass/fix.scss */
+.row__cross {
+  background: url("../img/cross.png") 0 0 no-repeat;
+  display: block;
+  width: 11px;
+  height: 11px;
+  cursor: pointer;
+}

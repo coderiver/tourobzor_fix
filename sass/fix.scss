@@ -1,0 +1,38 @@
+.fieldset__content{
+	overflow: hidden;
+}
+.row_rad {
+	position: relative;
+	vertical-align: top;
+	select{
+		width: 52px !important;
+		height: 21px;
+		background: transparent;
+		padding: 1px 5px;
+		line-height: 21px;
+		border-radius:  10px;
+		vertical-align: middle;
+		opacity: 0;
+		position: absolute;
+		top: 20px;
+		left: 0;
+	}
+}
+div.label{
+	width: 40px;
+	height: 20px;
+	padding: 1px 5px;
+	line-height: 20px;
+	border-radius:  3px;
+	vertical-align: middle;
+	border: 1px solid #cacaca;
+	overflow: hidden;
+	background: url("../img/back_arrow.png") 36px 11px no-repeat #fff;
+}
+.row__cross{
+	background: url("../img/cross.png") 0 0 no-repeat;
+	display: block;
+	width: 11px;
+	height: 11px;
+	cursor: pointer;
+}
