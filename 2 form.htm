@@ -15,8 +15,9 @@
 
 
 
-
         <link rel="stylesheet" media="screen" href="stylesheets/fix.css" >
+        <script src="js/jquery-latest.js"></script>
+        <script src="js/jquery.validate.js"></script>
 
 
 
@@ -34,6 +35,41 @@
         <script src="http://s.tourobzor.com/front/js/jquery.stickyScroller.min.js"></script>
         <script src="http://s.tourobzor.com/front/js/chosen.jquery.min.js"></script>
         <script src="http://s.tourobzor.com/front/js/infoBuble.js"></script>
+
+                <script src="//ulogin.ru/js/ulogin.js"></script>
+                        <script type='text/javascript'>
+                          $(document).ready(function(){
+                            $("#r-form").validate({
+                                groups: {
+                                  mygroup22: "days_start days_end price_start price_end"
+                                },
+                                  rules: {
+                                    days_start: {
+                                      required: true,
+                                      number: true
+                                    },
+                                    days_end: {
+                                      required: true,
+                                      number: true
+                                    },
+                                    price_start: {
+                                      required: true,
+                                      number: true
+                                    },
+                                    price_end: {
+                                      required: true,
+                                      number: true
+                                    },
+                                  }
+                                });
+                            });
+                        </script>
+                        <script type="text/javascript">
+                        jQuery.validator.setDefaults({
+                            debug: true,
+                            success: "valid"
+                        });;
+                        </script>
 
     </head>
     <body onLoad="getComment();">
@@ -1534,7 +1570,7 @@
     <div class="search__bg"></div>
     <div class="search__content">
 
-        <form name="search" action="/advancedsearch/results" method="post">
+        <form name="search" action="/advancedsearch/results" method="post" id="r-form">
             <span class="like_h2 search__title no__slideup">
                 <span>Подбор тура</span>
             </span>
@@ -1643,12 +1679,13 @@
 
 
             <div class="row">
-                <label for="">Стоимость (от/до)</label>
+                <label for="price_start">Стоимость (от/до)</label>
                 <div class="row row_half">
-                    <input type="text" maxlength="6" class="input input_short sync-pricefrom attr" name="price[start]" id="" value="" placeholder="От $                        ">
+                    <input type="text" maxlength="6" class="input input_short sync-pricefrom attr" name="price_start" id="price_start" value="" placeholder="От $                        ">
                 </div>
                 <div class="row row_half">
-                    <input type="text" maxlength="6" class="input input_short sync-priceto attr" name="price[end]" id="" value="" placeholder="До $"/>
+                    <label for="price_end" style="display:none;"></label>
+                    <input type="text" maxlength="6" class="input input_short sync-priceto attr" name="price_end" id="price_end" value="" placeholder="До $"/>
                 </div>
             </div>
 
@@ -1672,9 +1709,10 @@
             </div>
 
             <div class="row row_middle">
-                <label for="">Длительность тура</label>
-                <input maxlength="3" type="text" name="days[start]" class="input  input_short input_small3" id="days_start" value="" placeholder="От">
-                <input maxlength="3" type="text" name="days[end]" class="input  input_short input_small3" id="days_end" value="" placeholder="До">
+                <label for="days_start">Длительность тура</label>
+                <input maxlength="3" type="text" name="days_start" class="input  input_short input_small3" id="days_start" value="" placeholder="От">
+                <label for="days_end" style="display:none"></label>
+                <input maxlength="3" type="text" name="days_end" class="input  input_short input_small3" id="days_end" value="" placeholder="До">
             </div>
 
             <div class="row row_half row_fix">

@@ -13,9 +13,6 @@
 		<link rel="stylesheet" media="screen" href="http://s.tourobzor.com/front/css/ui-lightness/jquery-ui-1.8.21.custom.css"/>
 		<link rel="stylesheet" media="screen" href="http://s.tourobzor.com/front/css/jquery.autocomplete.css"/>
 		<link rel="stylesheet" media="screen" href="http://s.tourobzor.com/front/css/jquery.countdown.css"/>
-
-		<link rel="stylesheet" media="screen" href="stylesheets/fix.css" >
-
 		<script src="http://s.tourobzor.com/front/js/jquerytools.js"></script>
 		<script src="http://s.tourobzor.com/front/js/jquery-ui-1.9.2.custom.min.js"></script>
 		<script src="http://s.tourobzor.com/front/js/datepicker_ru.js" type="text/javascript" charset="utf-8"></script>
@@ -30,20 +27,55 @@
 		<script src="http://s.tourobzor.com/front/js/jquery.stickyScroller.min.js"></script>
 		<script src="http://s.tourobzor.com/front/js/chosen.jquery.min.js"></script>
 		<script src="http://s.tourobzor.com/front/js/infoBuble.js"></script>
-		    	<script src="//ulogin.ru/js/ulogin.js"></script>
-		    	<script>
-		    	jQuery(document).ready(function($) {
-		    		$("input").on('keyup', function(){
-					var str = document.getElementById('txt1').value;
-					$.post("gethint.php", {q: str});
-					});
-		    	});
+
+
+
+
+		<link rel="stylesheet" media="screen" href="stylesheets/fix.css" >
+		<script src="js/jquery-latest.js"></script>
+		<script src="js/jquery.validate.js"></script>
+
+
+    	<script src="//ulogin.ru/js/ulogin.js"></script>
+				<script type='text/javascript'>
+				  $(document).ready(function(){
+				    $("#g-form").validate({
+				    	groups: {
+				    	  mygroup: "price_start price_end days_start numbers"
+				    	},
+						  rules: {
+						  	price_start: {
+						  	  required: true,
+						  	  number: true
+						  	},
+						  	price_end: {
+						  	  required: true,
+						  	  number: true
+						  	},
+						    days_start: {
+						      required: true,
+						      number: true
+						    },
+						    numbers: {
+						      required: true,
+						      number: true
+						    },
+						  }
+						});
+				  	});
+				</script>
+		    	<script type="text/javascript">
+		    	jQuery.validator.setDefaults({
+		    		debug: true,
+		    		success: "valid"
+		    	});;
 		    	</script>
+
     	</head>
 	<body onLoad="getComment();">
-		
+
 			  		<div class="topad">
-				  				  					  <noindex><a target="_blank" rel="nofollow" href="/out?to=http://www.medlaif.ua/">			  	
+				  				  					  <noindex><a target="_blank" rel="nofollow" href="/out?to=http://www.medlaif.ua/">
 					<div style="position: relative;">
 						<a target="_blank" onClick='_gaq.push(["_trackEvent", "Banner", "Click", "main_medlife"])' href="/out?to=http://www.medlaif.ua/" style="position:absolute;width:728px;height:90px;background:url(http://s.tourobzor.com/front/img/1.gif);"></a>
 						<embed src="http://s.tourobzor.com/front/img/banners/advanced/main_medlife_728x90.swf" quality="high" type="application/x-shockwave-flash" wmode="opaque" width="728"
@@ -118,7 +150,7 @@
 
         <!--BEGIN .asearch -->
         <div class="asearch__wrap">
-            <form name="search" action="/advancedsearch/results" method="post">
+            <form name="search" novalidate="novalidate" id="g-form">
                 <div class="asearch">
 					                    <!--BEGIN .fieldset -->
                     <div class="fieldset fieldset_open">
@@ -257,9 +289,10 @@
                                 </div>
 
                                 <div class="row ">
-                                    <label for="">Длительность дней (от/до)</label>
-                                    <input type="text" maxlength="3" name="days[start]" class="input  input_short" id="days_start" value="7" placeholder="не важно">
-                                    <input type="text" maxlength="3" name="days[end]" class="input  input_short" id="days_end" value="9" placeholder="не важно">
+                                    <label for="days_start">Длительность дней (от/до)</label>
+                                    <input type="text" maxlength="3" name="days_start" class="input  input_short" id="days_start" value="7" placeholder="не важно">
+                                    <label for="numbers" style="display: inline-block;"></label>
+                                    <input type="text" maxlength="3" name="numbers" class="input  input_short" id="numbers" value="9" placeholder="не важно">
                                 </div>
 
                                 <div class="row__inline count_people">
@@ -291,9 +324,10 @@
 
                                 <div class="row__inline">
                                     <div class="row ">
-                                        <label for="">Стоимость (от/до)</label>
-                                        <input maxlength="6" id="price_start" type="text" name="price[start]"  class="input  input_short attr" id="" placeholder="От">
-                                        <input maxlength="6" id="price_end" type="text" name="price[end]" class="input  input_short attr" id="" placeholder="До">
+                                        <label for="price_start">Стоимость (от/до)</label>
+                                        <input maxlength="6" type="text" name="price_start"  class="input  input_short attr" id="price_start" placeholder="От">
+                                        <label for="price_end" style="display: none;"></label>
+                                        <input maxlength="6" type="text" name="price_end" class="input  input_short attr" id="price_end" placeholder="До">
                                     </div>
 
                                     <div class="row">
@@ -1008,7 +1042,7 @@
 						                      </div>
                 </div>
                 <div class="asearch__last">			
-                    <a href="javascript:document.search.submit()" class="but" >Подобрать  тур</a>
+                    <a href="#" class="but" >Подобрать  тур</a>
                 </div>
             </form>
             <div id="more" class="asearch__moreless asearch__moreless_more">

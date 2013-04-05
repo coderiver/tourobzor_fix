@@ -121,3 +121,102 @@ input:-moz-placeholder {
   right: -93px;
   z-index: 100;
 }
+
+/* line 98, ../sass/fix.scss */
+input.error {
+  border: 1px solid #e44333;
+}
+
+/* line 99, ../sass/fix.scss */
+span.error {
+  color: #d5200b;
+  font-style: italic;
+}
+/* line 102, ../sass/fix.scss */
+span.error span {
+  width: 605px;
+  background: #f6d5d1;
+  display: inline-block;
+  position: absolute;
+  top: -77px;
+  left: -1px;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 0 0 15px;
+  border-radius: 5px;
+}
+/* line 114, ../sass/fix.scss */
+span.error b {
+  font-weight: normal;
+  font-size: 21px;
+}
+/* line 118, ../sass/fix.scss */
+span.error i {
+  width: 14px;
+  height: 14px;
+  background: url("../img/cross_pink.png") 0px 0px no-repeat;
+  position: absolute;
+  right: 7px;
+  top: 5px;
+  cursor: pointer;
+}
+
+/* line 128, ../sass/fix.scss */
+label.error {
+  display: none !important;
+}
+
+/* line 132, ../sass/fix.scss */
+.fieldset {
+  margin-top: 80px !important;
+}
+
+/* line 138, ../sass/fix.scss */
+.error_box {
+  position: relative;
+  float: left;
+  clear: left;
+  width: 350px;
+  height: 18px;
+  margin-top: 15px;
+  padding: 5px 5px 4px 30px;
+  background-image: url(http://dev.eins1.tv/apps/jQ.Pinky/images/error_cross.png);
+  background-repeat: no-repeat;
+  background-position: 4px 5px;
+  border: 1px solid #4b4b4b;
+  background-color: #3d3d3d;
+  display: none;
+}
+
+/* line 153, ../sass/fix.scss */
+.error_form {
+  position: relative;
+  float: left;
+  clear: left;
+  width: 540px;
+  height: 18px;
+  margin-top: 15px;
+  padding: 5px 5px 4px 30px;
+  background-image: url(http://dev.eins1.tv/apps/jQ.Pinky/images/error_cross.png);
+  background-repeat: no-repeat;
+  background-position: 4px 5px;
+  border: 1px solid #4b4b4b;
+  background-color: #3d3d3d;
+  display: none;
+}
+
+/* form element errors (#form_demo should be the ID of the container sourrounding the Form) */
+/* line 169, ../sass/fix.scss */
+#form_demo .pTextError {
+  color: #e8098c;
+}
+
+/* line 172, ../sass/fix.scss */
+#form_demo input.pBorderError, #form_demo textarea.pBorderError {
+  border-color: #e8098c;
+}
+
+/* line 175, ../sass/fix.scss */
+#form_demo input.pBackgroundError, #form_demo textarea.pBackgroundError {
+  background-color: #131313;
+}
